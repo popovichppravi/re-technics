@@ -6,17 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
 
-    <title>Hello, world!</title>
+    <title>Ретехника - сток-центр компьютеров и мелкой бытовой техники </title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--Шапка сайта -->
+    <header>
+      <div class="container-fluid">
+        <div class= "headline">
+          <div class="row">
+            <div class="col-md-4">
+              <!-- Логотип -->
+              <div class="headline_logo">
+                <a href="#"><img src="img/logo.png"></a>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <!--Выбор региона -->
+              <p class="region"> Ваш регион: 
+                <span class="txt_red">г. Воронеж</span>
+              </p>
+              <p class="txt_black">Время экономить</p>
+            </div>
+            <div class="col-md-4">
+
+              <div id="top_search">  
+                <form action="/search/index.php" id="src_form">
+                  <input class="src_txt" type="text" name="q" value="" size="15" maxlength="50">      
+                  <input name="s" type="submit" class="red_btn" value="Поиск">
+                </form>
+              </div>
+              
+            </div>
+
+            <div class="col-md-1">
+
+              <div class="bx-basket-block">
+                <a href="#">
+                  <img src="img/cart.png" alt="Корзина">
+                  <span>0</span>
+                </a>
+              </div>
+
+            </div>
+          </div> <!--row -->
+
+          <!--Строка меню -->
+          <div class="row">
+            <div class="headline_menu">
+              <div class="headline_menuline">
+                <div>   
+                  <div class="menu d-flex flex-wrap justify-content-between">
+                  <a href="" class="menu__item">Компьютеры</a>
+                  <a href="" class="menu__item">Бытовая техника</a>
+                  <a href="" class="menu__item">Детали и запчасти</a>
+                  <a href="" class="menu__item">Доставка и оплата</a>
+                  <a href="" class="menu__item">Отдел закупок</a>
+                  <a href="" class="menu__item">Акции</a>
+                  <a href="" class="menu__item">Контакты</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!--headline --> 
+      </div> <!--container -->
+    </header>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
