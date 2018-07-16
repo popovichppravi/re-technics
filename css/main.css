@@ -1,0 +1,124 @@
+body {
+	color: #000000;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    cursor: text;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+/*Шапка*/
+.headline {
+	background-color: #ffffff;
+	height: 522px;
+    border-top: 8px solid #2E2D2E;
+}
+.headline_logo{
+	margin: 10px 0px 20px 50px;
+}
+.region{
+	font-size: 20px;
+    font-family: "MyriadPro-BoldIt";
+    margin: 35px 0 0 0;
+}
+.txt_red{
+	font-size: 22px;
+    font-family: "MyriadPro-BoldIt";
+    margin-left: 10px;
+    cursor: pointer;
+    color: #960300;
+}
+.txt_black{
+	font-size: 20px;
+    font-family: "MyriadPro-BoldSemiCn";
+    line-height: 1px;
+}
+
+.top_search{
+	display: inline-block;
+    vertical-align: middle;
+}
+.src_txt{
+    width: 235px;
+    margin: 35px 15px 6px;
+    border-top: 2px solid #A6A7A7;
+    border-left: 2px solid #A6A7A7;
+    border-bottom: 1px solid #A6A7A7;
+    border-right: 1px solid #A6A7A7;
+    background: #F1F2F2;
+}
+.red_btn {
+    background: #e62929;
+    background: -moz-linear-gradient(-90deg, #e62929 0%, #990300 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e62929), color-stop(100%,#990300));
+    background: -webkit-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: -o-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: -ms-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: linear-gradient(180deg, #e62929 0%,#990300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62929', endColorstr='#990300',GradientType=1 );
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: -1px -1px 0px #630C0C;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+    outline: none;
+    text-decoration: none;
+    margin-left: -25px;
+}
+.bx-basket-block{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 30px;
+
+}
+.bx-basket-block a img {
+    height: 35px;
+}
+.bx-basket-block a span {
+    font-family: "MyriadPro-BoldSemiCn" !important;
+    background-color: #D32027;
+    color: #fff;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    top: 0;
+    right: -15px;
+}
+/* Шапка - Строка меню*/
+.headline_menu{
+	background: linear-gradient(to bottom, rgba(204,10,10,1) 0%,rgba(181,3,0,1) 100%);
+	width: 100%;
+    text-align: center;
+    padding-top: 1px;
+}
+.headline_menuline{
+	border-top: 1px solid #D55251;
+    border-bottom: 1px solid #8E1110;
+    display: block;
+ }
+
+.menu__item{
+	border-right: 1px solid #D35150;
+	padding: 14px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "MyriadPro-Regular";
+    text-shadow: -1px -1px 0px #630C0C;
+    border-left: 1px solid #D35150;
+	}
