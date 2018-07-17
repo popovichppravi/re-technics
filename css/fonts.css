@@ -49,11 +49,11 @@
 	font-weight: normal;
 }
 @font-face {
-	font-family: "MyriadPro-BoldSemiCn";
-	src: url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.eot");
-	src: url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.woff") format("woff"),
-	url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.ttf") format("truetype");
+	font-family: "MyriadPro-Semibold";
+	src: url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot");
+	src: url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"),
+	url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }

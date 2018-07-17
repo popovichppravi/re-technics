@@ -4,11 +4,13 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="template_styles.css">
     <link rel="stylesheet" href="css/fonts.css">
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <title>Ретехника - сток-центр компьютеров и мелкой бытовой техники </title>
   </head>
@@ -17,62 +19,69 @@
     <header>
       <div class="container-fluid">
         <div class= "headline">
+          <!--row start-->
           <div class="row">
-            <div class="col-md-4">
-              <!-- Логотип -->
+            <!--Шапка сайта - Логотип -->
+            <div class="col-md-5">
               <div class="headline_logo">
-                <a href="#"><img src="img/logo.png"></a>
-              </div>
+                <a href="#"><img src="image/logo.png"></a>
+              </div> 
             </div>
+            <!--Шапка сайта - Логотип -->
+            <!--Шапка сайта - Выбор региона -->
             <div class="col-md-3">
-              <!--Выбор региона -->
-              <p class="region"> Ваш регион: 
-                <span class="txt_red">г. Воронеж</span>
+              <p class="headline_region"> Ваш регион: 
+                <span>г. Воронеж</span>
+                <i class="fa fa-caret-down"></i>
               </p>
-              <p class="txt_black">Время экономить</p>
+              <p class="headline_slogan">Время экономить</p>
             </div>
-            <div class="col-md-4">
-
-              <div id="top_search">  
-                <form action="/search/index.php" id="src_form">
-                  <input class="src_txt" type="text" name="q" value="" size="15" maxlength="50">      
-                  <input name="s" type="submit" class="red_btn" value="Поиск">
-                </form>
-              </div>
-              
+            <!--Шапка сайта - Выбор региона -->
+            <!--Шапка сайта - Строка поиска -->
+            <div class="col-md-3">
+              <form action="/search/index.php" id="src_form">
+                <input class="headline_srctxt" type="text" name="q" value="" size="15" maxlength="50">      
+                <input class="headline_srcbnt" name="s" type="submit" value="Поиск">
+              </form> 
             </div>
-
+            <!--Шапка сайта - Строка поиска -->
+            <!--Шапка сайта - Корзина -->
             <div class="col-md-1">
-
-              <div class="bx-basket-block">
+              <div class="headline_basket">
                 <a href="#">
-                  <img src="img/cart.png" alt="Корзина">
+                  <img src="image/cart.png" alt="Корзина">
                   <span>0</span>
                 </a>
               </div>
-
+              <!--Шапка сайта - Корзина -->
             </div>
-          </div> <!--row -->
-
-          <!--Строка меню -->
+          </div>
+          <!--row end-->
+          <!--row start-->
           <div class="row">
-            <div class="headline_menu">
-              <div class="headline_menuline">
-                <div>   
-                  <div class="menu d-flex flex-wrap justify-content-between">
-                  <a href="" class="menu__item">Компьютеры</a>
-                  <a href="" class="menu__item">Бытовая техника</a>
-                  <a href="" class="menu__item">Детали и запчасти</a>
-                  <a href="" class="menu__item">Доставка и оплата</a>
-                  <a href="" class="menu__item">Отдел закупок</a>
-                  <a href="" class="menu__item">Акции</a>
-                  <a href="" class="menu__item">Контакты</a>
+            <!--Шапка сайта - Строка меню -->
+            <div class="col-md-12">
+              <div class="headline_menu">
+                <div class="headline_menuline">  
+                  <div class="menu d-flex flex-wrap justify-content-center">
+                      <a href="" class="menu__item">Компьютеры</a>
+                      <a href="" class="menu__item">Бытовая техника</a>
+                      <a href="" class="menu__item">Детали и запчасти</a>
+                      <a href="" class="menu__item">Доставка и оплата</a>
+                      <a href="" class="menu__item">Отдел закупок</a>
+                      <a href="" class="menu__item">Акции</a>
+                      <a href="" class="menu__item">Контакты</a>
+                  </div>
                 </div>
               </div>
             </div>
+            <!--Шапка сайта - Строка меню -->
           </div>
-        </div> <!--headline --> 
-      </div> <!--container -->
+          <!--row end-->
+        </div>
+        <!--headline --> 
+      </div>
+      <!--container -->
     </header>
 
     <!-- Optional JavaScript -->
