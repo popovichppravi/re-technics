@@ -1,0 +1,134 @@
+body {
+	color: #000000;
+}
+
+/***Шапка сайта***/
+.headline {
+	background-color: #ffffff;
+ 	height: 522px;
+    border-top: 8px solid #2E2D2E;
+}
+
+.headline_logo{
+	margin: 10px 0px 15px 50px;
+}
+/*Шапка сайта - Выбор региона*/
+.headline_region{
+	font-size: 20px;
+    font-family: "MyriadPro-BoldIt";
+    margin: 35px 0 0 0;
+}
+.headline_region span, i{
+	font-size: 22px;
+    font-family: "MyriadPro-BoldIt";
+    cursor: pointer;
+    color: #960300;
+}
+.headline_slogan{
+	font-size: 20px;
+    font-family: "MyriadPro-Semibold";
+    line-height: 1px;
+}
+/*Шапка сайта - Выбор региона*/
+/*Шапка сайта - Строка поиска*/
+.headline_srctxt{
+    width: 250px;
+    margin: 35px 15px 6px -40px;
+    border-top: 2px solid #A6A7A7;
+    border-left: 2px solid #A6A7A7;
+    border-bottom: 1px solid #A6A7A7;
+    border-right: 1px solid #A6A7A7;
+    background: #F1F2F2;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+}
+.headline_srcbnt{
+    background: #e62929;
+    background: -moz-linear-gradient(-90deg, #e62929 0%, #990300 100%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#e62929), color-stop(100%,#990300));
+    background: -webkit-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: -o-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: -ms-linear-gradient(-90deg, #e62929 0%,#990300 100%);
+    background: linear-gradient(180deg, #e62929 0%,#990300 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e62929', endColorstr='#990300',GradientType=1 );
+    padding: 3px 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: -1px -1px 0px #630C0C;
+    box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+    position: relative;
+    left: -21px;
+}
+/*Шапка сайта - Строка поиска*/
+/*Шапка сайта - Корзина*/
+.headline_basket{
+    position: relative;
+    display: inline-block;
+    margin-top: 30px;
+}
+.headline_basket a img {
+    height: 35px;
+}
+.headline_basket a span {
+    font-family: "MyriadPro-Semibold" !important;
+    background-color: #D32027;
+    position: absolute;
+    color: #fff;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    top: 0;
+    right: -15px;
+}
+/*Шапка сайта - Корзина*/
+/* Шапка - Строка меню*/
+.headline_menu{
+	background: linear-gradient(to bottom, rgba(204,10,10,1) 0%,rgba(181,3,0,1) 100%);
+	width: 100%;
+    text-align: center;
+    padding-top: 1px;
+
+}
+.headline_menuline{
+	border-top: 1px solid #D55251;
+    border-bottom: 1px solid #8E1110;
+ }
+.menu_box{
+	order-left: 1px solid #D35150;
+	border-right: 1px solid  #8A0C0A;
+}
+.menu__item{
+    border-right: 1px solid #D35150;
+    border-left: 1px solid  #8A0C0A;
+	padding: 14px 30px;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: "MyriadPro-Regular";
+    text-shadow: -1px -1px 0px #630C0C;
+	}
+
+.headline_menu a:hover {
+    background: #990300;
+    color: #fff;
+    text-decoration: none;
+}
+/* Шапка - Строка меню*/
+/* Шапка - Слайдер*/
+.carousel-control-next-icon, 
+.carousel-control-prev-icon {
+    height: 40px;
+    width: 40px;
+}
+/* Шапка - Слайдер*/
+.headline_bottom {
+    background: linear-gradient(to bottom, rgba(204,10,10,1) 0%,rgba(181,3,0,1) 100%);
+    height: 8px;
+    width: 100%;
+}
+/***Шапка сайта - ***/
