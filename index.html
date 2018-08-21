@@ -16,73 +16,88 @@
     <title>Ретехника - сток-центр компьютеров и мелкой бытовой техники </title>
   </head>
   <body>
-    <!--Шапка сайта -->
+    <!--header -->
     <header>
+      <!--container-fluid-->
       <div class="container-fluid">
+
+        <!--headline-->
         <div class= "headline">
-          <!--row start-->
+
+          <!--row headline_phone-->
+          <div class="headline_phone">  
+            <div class="row">
+                <div class="col-xl-4"></div>
+                <div class="col-xl-4">МАГАЗИН КОМПЬЮТЕРНОЙ И БЫТОВОЙ ТЕХНИКИ</div>
+                <div class="col-xl-2"></div>
+                <div class="col-xl-2">8 (920) 218-52-90</div>
+            </div>
+          </div>
+          <!--/row headline_phone-->
+
+          <!--row logo_search_basket_lk-->
           <div class="row">
-            <!--Шапка сайта - Логотип -->
-            <div class="col-md-5">
+            <!--header_logo -->
+            <div class="col-xl-3">
               <div class="headline_logo">
-                <a href="#"><img src="image/logo.png"></a>
+                <a href="#"><img src="image/logo.svg"></a>
               </div> 
             </div>
-            <!--Шапка сайта - Логотип -->
-            <!--Шапка сайта - Выбор региона -->
-            <div class="col-md-3">
-              <p class="headline_region"> Ваш регион: 
-                <span>г. Воронеж</span>
-                <i class="fa fa-caret-down"></i>
-              </p>
-              <p class="headline_slogan">Время экономить</p>
+            <!--/header_logo-->
+            <!--header_search -->
+            <div class="col-xl-7">
+              <div class="headline_search">
+                <form action="/search/index.php" id="src_form">
+                  <input class="headline_srctxt" type="text" name="q" value="" size="15" maxlength="50">      
+                  <input class="headline_srcbnt" name="s" type="submit" value="Поиск">
+                </form>
+              </div>
             </div>
-            <!--Шапка сайта - Выбор региона -->
-            <!--Шапка сайта - Строка поиска -->
-            <div class="col-md-3">
-              <form action="/search/index.php" id="src_form">
-                <input class="headline_srctxt" type="text" name="q" value="" size="15" maxlength="50">      
-                <input class="headline_srcbnt" name="s" type="submit" value="Поиск">
-              </form> 
-            </div>
-            <!--Шапка сайта - Строка поиска -->
-            <!--Шапка сайта - Корзина -->
-            <div class="col-md-1">
+            <!--/header_search -->
+            <!--header_basket -->
+            <div class="col-xl-1">
               <div class="headline_basket">
                 <a href="#">
                   <img src="image/cart.png" alt="Корзина">
                   <span>0</span>
                 </a>
               </div>
-              <!--Шапка сайта - Корзина -->
-            </div>
-          </div>
-          <!--row end-->
-          <!--row start-->
-          <div class="row">
-            <!--Шапка сайта - Строка меню -->
-            <div class="col-md-12">
-              <div class="headline_menu">
-                <div class="headline_menuline">  
-                  <div class="menu d-flex flex-wrap justify-content-center">
-                      <a href="" class="menu__item">Компьютеры</a>
-                      <a href="" class="menu__item">Бытовая техника</a>
-                      <a href="" class="menu__item">Детали и запчасти</a>
-                      <a href="" class="menu__item">Доставка и оплата</a>
-                      <a href="" class="menu__item">Отдел закупок</a>
-                      <a href="" class="menu__item">Акции</a>
-                      <a href="" class="menu__item">Контакты</a>
-                  </div>
-                </div>
+            </div>  
+            <!--/header_basket -->
+            <!--header_lk -->
+            <div class="col-xl-1">
+              <div class="headline_login">
+                <a href="#">
+                  <img src="image/login.png" alt="Корзина">
+                </a>
               </div>
-            </div>
-            <!--Шапка сайта - Строка меню -->
+            </div>  
+            <!--/header_lk -->            
           </div>
-          <!--row end-->
-          <!--row start-->
+          <!--/row logo_search_basket_lk-->
+
+          <!--row header_menu-->
           <div class="row">
-            <div class="col-md-12">
-              <!--Шапка сайта - Слайдер  -->
+            <!--header_menu -->
+            <div class="col-xl-12">
+              <nav class="nav justify-content-center h_menu">
+                <a class="nav-link active h_menu_item" href="#">Компьютеры</a>
+                <a class="nav-link h_menu_item" href="#">Бытовая техника</a>
+                <a class="nav-link h_menu_item" href="#">Детали и запчасти</a>
+                <a class="nav-link h_menu_item" href="#">Доставка и оплата</a>
+                <a class="nav-link h_menu_item" href="#">Отдел закупок</a>
+                <a class="nav-link h_menu_item" href="#">Акции</a>
+                <a class="nav-link h_menu_item" href="#">Контакты</a>
+              </nav>
+            </div>
+            <!--/header_menu -->
+          </div>
+          <!--/row header_menu-->
+
+          <!--row header_slider-->
+          <div class="row">
+            <div class="col-xl-12">
+              <!--header_slider -->
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
                   <li class="active" data-target="#carouselExampleIndicators" data-slider-to="0"></li>
@@ -109,98 +124,308 @@
                   <span class="sr-only">Next</span>
                 </a>
               </div>
-              <!--Шапка сайта - Слайдер -->
+              <!--/header_slider -->
             </div>  
           </div>
-          <!--row end -->
-          <!--row start -->
+          <!--/row header_slider -->
+
+          <!--row header_bottom -->
           <div class="row">
-            <div class="col-md-12">
+            <div class="col-xl-12">
               <div class="headline_bottom"></div>
             </div>
           </div>
-          <!--row end -->
-          <!--row start -->
-          <div class="row">
-             <div class="col">
-                  1
-              </div>
-              <div class="col">
-                  2
-              </div>
-              <div class="col">
-                  3
-              </div>
-              <div class="col">
-                  4
-              </div>
-              <div class="col">
-                  5
-              </div>
-              <div class="col">
-                  6
-              </div>
-              <div class="col">
-                  7
-              </div>
-              <div class="col">
-                  8
-              </div>
-              <div class="col">
-                  9
-              </div>
-              <div class="col">
-                  10
-              </div>
-              <div class="col">
-                  11
-              </div>
-              <div class="col">
-                  12
-              </div>
-              <div class="col">
-                  13
-              </div>
-              <div class="col">
-                  14
-              </div>
-              <div class="col">
-                  15
-              </div>
-              <div class="col">
-                  16
-              </div>
-              <div class="col">
-                  17
-              </div>
-              <div class="col">
-                  18
-              </div>
-              <div class="col">
-                  19
-              </div>
-              <div class="col">
-                  20
-              </div>
-              <div class="col">
-                  21
-              </div>
-              <div class="col">
-                  22
-              </div>
-              <div class="col">
-                  23
-              </div>
-              <div class="col">
-                  24
-              </div>
-          </div>
-          <!--row end -->
+          <!--/row header_bottom -->
         </div>
-        <!--headline --> 
+        <!--/headline --> 
       </div>
-      <!--container -->
+      <!--/container-fluid-->
     </header>
+    <!--/header -->
+
+    <!--content-->
+    <content>
+      <!--container-fluid-->
+      <div class="container-fluid">
+
+          <!--row-->
+          <div class="row">
+
+            <div class="col-xl-4">
+              <!--Left menu-->
+              <div id="accordion">
+
+                <!-- Первый уровень меню-->
+                <div class="card lm">
+                  <div class="card-header" id="headingOne">
+                      <a data-toggle="collapse" href="#collapseOne">Меню #1</a>
+                  </div>
+
+                  <!-- Обертка для второго уровня меню-->
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <!-- Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingOne_1">
+                            <a data-toggle="collapse" href="#collapseOne_1">Меню #1_1</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_1" class="collapse" aria-labelledby="headingOne_1" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card">
+                              <div class="card-header" id="headingOne_1_1">
+                                  <a data-toggle="collapse" href="#">Меню #1_1_1</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_1_2">
+                                  <a data-toggle="collapse" href="#">Меню #1_1_2</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_1_3">
+                                  <a data-toggle="collapse" href="#">Меню #1_1_3</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_1_4">
+                                  <a data-toggle="collapse" href="#">Меню #1_1_4</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingOne_2">
+                            <a data-toggle="collapse" href="#collapseOne_2">Меню #1_2</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_2" class="collapse" aria-labelledby="headingOne_2" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card">
+                              <div class="card-header" id="headingOne_2_1">
+                                  <a data-toggle="collapse" href="#">Меню #1_2_1</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_2_2">
+                                  <a data-toggle="collapse" href="#">Меню #1_2_2</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_2_3">
+                                  <a data-toggle="collapse" href="#">Меню #1_2_3</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_2_4">
+                                  <a data-toggle="collapse" href="#">Меню #1_2_4</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingOne_3">
+                            <a data-toggle="collapse" href="#collapseOne_3">Меню #1_3</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_3" class="collapse" aria-labelledby="headingOne_3" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card">
+                              <div class="card-header" id="headingOne_3_1">
+                                  <a data-toggle="collapse" href="#">Меню #1_3_1</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_3_2">
+                                  <a data-toggle="collapse" href="#">Меню #1_3_2</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_3_3">
+                                  <a data-toggle="collapse" href="#">Меню #1_3_3</a>
+                              </div>
+                            </div>
+                            <div class="card">
+                              <div class="card-header" id="headingOne_3_4">
+                                  <a data-toggle="collapse" href="#">Меню #1_3_4</a>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>        
+                    </div>
+                  </div>
+                </div> 
+
+                <!-- Первый уровень меню-->
+                <div class="card lm">
+                  <div class="card-header" id="headingTwo">
+                      <a data-toggle="collapse" href="#collapseTwo">Меню #2</a>
+                  </div>
+
+                  <!-- Обертка для второго уровня меню-->
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingTwo_1">
+                            <a data-toggle="collapse" href="#">Меню #2_1</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingTwo_2">
+                            <a data-toggle="collapse" href="#">Меню #2_2</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingTwo_3">
+                            <a data-toggle="collapse" href="#">Меню #2_3</a>
+                        </div>
+                      </div>          
+
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Первый уровень меню-->
+                <div class="card lm">
+                  <div class="card-header" id="headingThree">
+                       <a data-toggle="collapse" href="#collapseThree">Меню #3</a>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingThree_1">
+                            <a data-toggle="collapse" href="#">Меню #3_1</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingThree_2">
+                            <a data-toggle="collapse" href="#">Меню #3_2</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card">
+                        <div class="card-header" id="headingThree_3">
+                            <a data-toggle="collapse" href="#">Меню #3_3</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--/Left menu-->
+            </div>
+
+            <div class="col-xl-8">
+              <!--row 1-->
+              <div class="row">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                </div>
+              </div>
+              <!--/row 1-->
+              <!--row 2-->
+              <div class="row">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                </div>
+              </div>
+              <!--/row end-->
+              <!--row 3-->
+              <div class="row">
+                <div class="card-deck">
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_2.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                  <div class="card">
+                    <img class="card-img-top" src="image/prod_2.jpg" alt="Card image cap">
+                    <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+                  </div>
+                </div>
+              </div>
+              <!--/row 3-->
+            </div>
+
+          </div> 
+          <!--/row-->
+      </div>
+      <!--/container-fluid-->
+    </content>
+    <!--/content-->      
+
+    <footer>
+      <div class="container-fluid">
+        <div class="footerline_chet">
+          <div class="row">
+            <div class="col-md-11"></div>
+            <div class="col-md-1">
+              <!-- Yandex.Metrika informer -->
+              <a href="https://metrika.yandex.ru/stat/?id=29306175&amp;from=informer" target="_blank" rel="nofollow"><!-- /Yandex.Metrika informer --><img src="https://informer.yandex.ru/informer/29306175/1_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="29306175" data-lang="ru"></a>
+              <!-- /Yandex.Metrika informer -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

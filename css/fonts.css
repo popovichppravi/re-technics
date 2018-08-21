@@ -49,19 +49,11 @@
 	font-weight: normal;
 }
 @font-face {
-<<<<<<< HEAD
 	font-family: "MyriadPro-Semibold";
 	src: url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot");
 	src: url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.woff") format("woff"),
 	url("../fonts/MyriadPro-Semibold/MyriadPro-Semibold.ttf") format("truetype");
-=======
-	font-family: "MyriadPro-BoldSemiCn";
-	src: url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.eot");
-	src: url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.eot?#iefix")format("embedded-opentype"),
-	url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.woff") format("woff"),
-	url("../fonts/MyriadPro-BoldSemiCn/MyriadPro-BoldSemiCn.ttf") format("truetype");
->>>>>>> e4a23b25bfc2ea667854a03969affaca38289c52
 	font-style: normal;
 	font-weight: normal;
 }
@@ -71,6 +63,33 @@
 	src: url("../fonts/MyriadPro-Regular/MyriadPro-Regular.eot?#iefix")format("embedded-opentype"),
 	url("../fonts/MyriadPro-Regular/MyriadPro-Regular.woff") format("woff"),
 	url("../fonts/MyriadPro-Regular/MyriadPro-Regular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "MyriadPro-Bold";
+	src: url("../fonts/MyriadPro-Bold/MyriadPro-Bold.eot");
+	src: url("../fonts/MyriadPro-Bold/MyriadPro-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/MyriadPro-Bold/MyriadPro-Bold.woff") format("woff"),
+	url("../fonts/MyriadPro-Bold/MyriadPro-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+	url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+	font-family: "RobotoMedium";
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+	src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+	url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
