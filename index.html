@@ -16,10 +16,12 @@
     <title>Ретехника - сток-центр компьютеров и мелкой бытовой техники </title>
   </head>
   <body>
+  <div class=" container p-0 shadow-lg">
+
     <!--header -->
     <header>
       <!--container-fluid-->
-      <div class="container-fluid">
+      <div class="container p-0">
 
         <!--headline-->
         <div class= "headline">
@@ -99,16 +101,11 @@
             <div class="col-xl-12">
               <!--header_slider -->
               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                  <li class="active" data-target="#carouselExampleIndicators" data-slider-to="0"></li>
-                  <li data-target="#carouselExampleIndicators" data-slider-to="2"></li>
-                  <li data-target="#carouselExampleIndicators" data-slider-to="3"></li>
-                </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
                     <img src="image/1.jpg" alt="" class="d-block w-100">
                   </div>
-                  <div class="carousel-item ac">
+                  <div class="carousel-item">
                     <img src="image/2.jpg" alt="" class="d-block w-100">
                   </div>
                   <div class="carousel-item">
@@ -146,7 +143,7 @@
     <!--content-->
     <content>
       <!--container-fluid-->
-      <div class="container-fluid">
+      <div class="containe p-0">
 
           <!--row-->
           <div class="row">
@@ -154,6 +151,13 @@
             <!--left_menu-->
             <div class="col-xl-4">
               <!--Left menu-->
+
+              <div class="card p-0">
+                  <div class="card-header lmenu active" id="heading">
+                      <span>Компьютерная техника</span>
+                  </div>
+              </div> 
+
               <div class="LM" id="accordion">
 
                 <!-- Первый уровень меню-->
@@ -343,18 +347,20 @@
             <div class="col-xl-8">
               <!--breadcrumb-->
               <div class="row">
-                <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Компьютерная техника</a></li>
-                    <li class="breadcrumb-item"><a href="#">Мониторы</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">ЖК 17"</li>
-                  </ol>
-                </nav>
+                <div class="col-xl-12">
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item"><a href="#">Компьютерная техника</a></li>
+                      <li class="breadcrumb-item"><a href="#">Мониторы</a></li>
+                      <li class="breadcrumb-item active" aria-current="page">ЖК 17"</li>
+                    </ol>
+                  </nav>
+                </div>  
               </div>
               <!--/breadcrumb-->
               <!--catalog_title-->
               <div class="row">
-                <h1>Мониторы</h1>  
+                <div class="col-xl-12"><h1>Мониторы</h1></div>  
               </div>
               <!--/catalog_title-->
 
@@ -364,13 +370,12 @@
                 <!--catalog_sort-->
                 <div class="col-xl-8"> 
                   <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Кнопка выпадающего списка
+                    <button class="btn my-btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      По возрастанию цены
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="#">По убыванию цены</a>
+                      <a class="dropdown-item" href="#">По наименованию</a>
                     </div>
                   </div>
                 </div>
@@ -392,7 +397,9 @@
                 <div class="card-deck">
                   <div class="card">
                     <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
+                    <span class="price"> 2150 </span>
                     <div class="card-footer">Монитор с дефектом ЖК 17" Samsung 740N</div>
+
                   </div>
                   <div class="card">
                     <img class="card-img-top" src="image/prod_1.jpg" alt="Card image cap">
@@ -490,7 +497,7 @@
     <!--/content-->      
 
     <footer>
-      <div class="container-fluid">
+      <div class="container p-0">
 
         <!--yandex_metrika-->
         <div class="footer_metrika">
@@ -548,7 +555,7 @@
 
       </div>
     </footer>
-
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

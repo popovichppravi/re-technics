@@ -93,3 +93,12 @@
 	font-style: normal;
 	font-weight: normal;
 }
+@font-face {
+	font-family: "Roboto-Bold";
+	src: url("../fonts/Roboto-Bold/Roboto-Bold.eot");
+	src: url("../fonts/Roboto-Bold/Roboto-Bold.eot?#iefix")format("embedded-opentype"),
+	url("../fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"),
+	url("../fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
