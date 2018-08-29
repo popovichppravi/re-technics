@@ -11,6 +11,9 @@ h1{
 .shadow-lg{
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
 }
+.my-pad{
+    padding-right: 30px;
+}
 /*** header***/
 .headline {
 	background-color: #ffffff;
@@ -70,11 +73,20 @@ h1{
 .headline_login{
     position: relative;
     display: inline-block;
-    margin-top: 45px;
+    display:flex;
+    justify-content: center; /*центрируем элемент по горизонтали */
+    align-items: center; /* и вертикали */
+    width: 100%; /* задали размеры блоку-родителю */
+    height: 100%;
+    overflow: hidden;
 }
-.headline_basket a img,
+.headline_basket a img{
+    height: 38px;
+    width: 42px; 
+}
 .headline_login a img {
-    height: 35px;
+    height: 46px;
+    width: 46px;
 }
 .headline_basket a span {
     font-family: "MyriadPro-Semibold" !important;
@@ -87,8 +99,8 @@ h1{
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
-    top: 0;
-    right: -15px;
+    bottom: 50px;
+    right: 0;
 }
 /* /header_basket*/
 
@@ -243,6 +255,40 @@ h1{
     background: #F5F6F6;
     border-color: #B9BBBD;
 }
+.c{
+    display: inline-block;
+    text-align: center;
+    width: 172px;
+    height: 250px;
+}
+.c_in{
+    width: 172px;
+    height: 150px;
+    display:flex;
+    justify-content: center; /*центрируем элемент по горизонтали */
+    align-items: center; /* и вертикали */
+    overflow: hidden; /* если элемент больше блока-родителя – обрезаем лишнее */
+}
+.c img{
+    max-width: 172px;
+    max-height: 150px;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    zoom: 0.9;
+    display: block;
+    margin: 0 auto;
+}
+.c img:hover {
+    max-width: 200px;
+    max-height: 180px;
+    cursor: pointer;
+}
+.c a{
+    text-align: center;
+    font-family: "RobotoMedium";
+    font-size: 16px;
+    color: #231F20; 
+}
 .card-deck{
     margin-left: 0;
     margin-right: 10px;
@@ -266,17 +312,31 @@ h1{
 }
 .price {
     position: absolute;
-    right: 20px;
-    bottom: 10px;
     background: url(image/price.png);
-    background-size: 90px;
+    background-size: 100%;
     width: 90px;
     height: 25px;
     color: #fff;
-    font-size: 16px;
-    padding: 4px 0px 0px 0px;
-    text-align: right;
-    font-family: Arial;
+    font-family: "RobotoMedium";
+    font-size: 17px;
+    bottom: 140px;
+}
+.price:after{
+    content: "\f158";
+    font: normal normal normal 14px/1 FontAwesome;
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+.sale img{  
+    width: 35px;
+    height: 50px;
+    bottom: 210px;
+    position: relative;
+    left: -55px;
+}
+.card-img-top:focus {
+    outline: -webkit-focus-ring-color auto 5px;
 }
 /* /Блок Каталог*/
 /***  /content***/
@@ -294,13 +354,14 @@ h1{
 .footer_menu{
     background: #3B3B3B;
     min-height: 165px;
-    padding: 20px 120px;
+    padding: 20px 20px;
     border-bottom: #2E2D2E solid 10px;
 }
 .footer_menu h3{
     text-transform: uppercase;
     color: #BCBEC0;
     font-size: 18px;
+    font-family: "RobotoMedium";
 }
 .footer_menu ul{
     list-style-type: disc;
@@ -314,7 +375,7 @@ h1{
     color: #fff;
     text-decoration: none;
     font-size: 18px;
-    font-family: 'Open Sans', arial;
+    font-family: "RobotoRegular";
  } 
 
  .footer_menu li a:hover {
