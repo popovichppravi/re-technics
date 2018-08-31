@@ -8,11 +8,11 @@ h1{
     color: #8B0303;
     margin-bottom: 20px;
 }
-.shadow-lg{
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+.my-shadow{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
 }
-.my-pad{
-    padding-right: 30px;
+.my-row{
+    margin-bottom: 30px;
 }
 /*** header***/
 
@@ -54,6 +54,7 @@ h1{
     background: #F1F2F2;
     box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
 }
+
 .headline_srcbnt{
     background: #e62929;
     background: -moz-linear-gradient(-90deg, #e62929 0%, #990300 100%);
@@ -76,7 +77,7 @@ h1{
 }
 .headline_mob_src{
     position: relative;
-    display:flex;
+    display:none;
     justify-content: center; /*центрируем элемент по горизонтали */
     align-items: center; /* и вертикали */
     width: 100%; /* задали размеры блоку-родителю */
@@ -157,6 +158,12 @@ h1{
 .carousel-control-prev-icon {
     height: 60px;
     width: 30px;
+}
+.carousel-control-prev{
+    left: -50px;
+}
+.carousel-control-next{
+    right: -50px;
 }
 .carousel-control-prev-icon{
     background-image: url(image/slider_prev.png);
@@ -288,6 +295,12 @@ h1{
     background: #F5F6F6;
     border-color: #B9BBBD;
 }
+.table_view img{
+    
+}
+.list_view{
+    background-image: url(image/list_view.png);
+}
 .c{
     display: inline-block;
     text-align: center;
@@ -323,67 +336,65 @@ h1{
     color: #231F20; 
 }
 .price {
-    position: absolute;
+    position: relative;
     background: url(image/price.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     width: 90px;
     height: 25px;
     color: #fff;
     font-family: "RobotoMedium";
     font-size: 17px;
-    bottom: 140px;
+    bottom: 100px;
+    right:-31px;
+    padding: 5px 0 5px 30px;
 }
 .price:after{
-    content: "\f158";
-    font: normal normal normal 14px/1 FontAwesome;
+    content: "p.";
+    font-family: "RobotoMedium";
+    font-size: 17px;
     margin-left: 0px;
     margin-right: 10px;
-    font-size: 15px;
 }
 .sale img{  
     width: 35px;
     height: 50px;
-    bottom: 210px;
+    bottom: 240px;
     position: relative;
     left: -55px;
 }
-.page-link,
-.page-item:first-child .page-link,
-.page-item:last-child .page-link
-{
-    border-radius: 16px;
+.my-page{
     background: #eff0f1;
     height: 32px;
     min-width: 32px;
-    padding: 0 15px;
-    display: block;
     line-height: 32px;
-    color: #444;
+    color: #414042;
     font-size: 15px;
-    vertical-align: middle;
     font-family: "RobotoRegular";
     text-align: center;
-    border: 1px solid #dee2e6;
-    margin-left: 7px;
-    border-top-left-radius: none;
-    border-bottom-left-radius: none;
+    margin: 0 3px;
+    border: 1px solid #909295;
+    padding: 0 0;
 }
-.page-item:first-child .page-link,
-.page-item:last-child .page-link
+.my-page:hover{
+    background: #CE0202;
+    color: #414042;
+}
+.page-item:first-child .my-page,
+.page-item:last-child .my-page
 {
     background: transparent;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 0 20px;
+    color: #909295;
 }
-.page-link:hover{
-    background: rgb(230,231,232);
-}
-.page-item a:hover{
-    color: #444;
-}
-.page-item .page-link:active{
+.my-page.active {
     background: #CE0202;
-}
-.page-item a:active{
     color: #fff;
+    border: none;
 }
 
 /* /Блок Каталог*/
@@ -393,7 +404,6 @@ h1{
 .footer_metrika{
     background: #2E2D2E;
     height: 20px;
-    padding: 0px 20px;
 }
 .footer_metrika img{
     vertical-align: top;
@@ -402,7 +412,7 @@ h1{
 .footer_menu{
     background: #3B3B3B;
     min-height: 165px;
-    padding: 20px 20px;
+    padding: 20px 0;
     border-bottom: #2E2D2E solid 10px;
 }
 .footer_menu h3{
@@ -451,6 +461,12 @@ h1{
     .headline_mob_src{
         display: none;
     }
+    .carousel-control-prev{
+    left: -30px;
+    }
+.carousel-control-next{
+    right: -30px;
+    }
 }
 @media screen and (max-width: 768px){
     .headline_search{
@@ -459,6 +475,12 @@ h1{
     .headline_mob_src{
         display: flex;
     }
+    .carousel-control-prev{
+    left: -10px;
+    }
+.carousel-control-next{
+    right: -10px;
+    }
 }
 @media screen and (max-width: 576px){
     .headline_search{
@@ -466,7 +488,6 @@ h1{
     }
     .headline_mob_src{
         display: flex;
-    }
     }
 
 }

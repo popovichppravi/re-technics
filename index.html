@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="css/fonts.css">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <title>Ретехника - сток-центр компьютеров и мелкой бытовой техники </title>
   </head>
   <body>
 
-  <div class=" container p-0 shadow-lg">
+  <div class=" container p-0 my-shadow">
 
     <!--header -->
     <header>
@@ -56,7 +56,7 @@
             <div class="headline_search">
               <div class="w-100 text-center">
               <form action="/search/index.php" id="src_form">
-                <input class="headline_srctxt" type="text" name="q" value="" size="15" maxlength="50">      
+                <input class="headline_srctxt" type="search" name="q" value="" size="15" maxlength="50">      
                 <input class="headline_srcbnt" name="s" type="submit" value="Поиск">
               </form>
               </div>
@@ -93,7 +93,10 @@
           <!--header_menu -->            
             <div class="pl-3 pr-3 h_menu">
               <nav class="nav justify-content-around">       
-                <a class="nav-link active h_menu_item flex-fill d-none d-sm-block d-md-none" href="#">Каталог</a>
+                <a class="nav-link active h_menu_item flex-fill d-none d-sm-block d-md-none" href="#">
+                  <i class="fas fa-bars"></i>
+                  <span>Каталог</span>
+                </a>
                 <a class="nav-link active h_menu_item flex-fill d-none d-md-block" href="#">Компьютеры</a>
                 <a class="nav-link h_menu_item flex-fill d-none d-md-block" href="#">Бытовая техника</a>
                 <a class="nav-link h_menu_item flex-fill d-none d-md-block" href="#">Детали и запчасти</a>
@@ -371,7 +374,7 @@
               <!--/catalog_title-->
 
               <!--catalog_view_settings-->
-              <div class="row">
+              <div class="row my-row">
 
                 <!--catalog_sort-->
                 <div class="col-xl-8 col-lg-8 col-md-6"> 
@@ -390,9 +393,9 @@
                 <!--catalog_page_view-->
                 <div class="col-xl-2 col-lg-3 col-md-3 text-right"">
                   <!--catalog_table_view-->
-                  <a href="#"><img src="image/table_view.png"></a>
+                  <a class="table_view" href="#"><img src="image/table_view.png"></a>
                   <!--catalog_list_view-->
-                  <a href="#"><img src="image/list_view.png"></a>
+                  <a class="list_view" href="#"><img src="image/list_view.png"></a>
                 </div>
                 <!--/catalog_page_view-->
               </div>  
@@ -414,7 +417,7 @@
                         <a href=""><img src="image/noimage.png"></a>
                       </div>
                       <a href="">Монитор с дефектом ЖК 17" Samsung 740N</a>
-                      <span class="price"> 2150 </span>
+                      <span class="price">2150</span>
                     </div>
                     <div class="c">
                       <div class="c_in">
@@ -516,17 +519,19 @@
               </div>
 
               <!--pagination-->
-              <div class="row">
+              <div class="row my-row">
                 <div class="col-xl-12">
-                <nav aria-label="Навигация по страиницам">
-                  <ul class="pagination justify-content-center">
-                    <li class="page-item"><a class="page-link active" href="#">Назад</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item"><a class="page-link" href="#">Вперед</a></li>
-                  </ul>
-                </nav>
+                  <nav aria-label="Навигация по страиницам">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link my-page" href="#">Назад</a></li>
+                      <li class="page-item"><a class="page-link rounded-circle my-page active" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link rounded-circle my-page" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link rounded-circle my-page" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link rounded-circle my-page" href="#">4</a></li>
+                      <li class="page-item"><a class="page-link rounded-circle my-page" href="#">57</a></li>
+                      <li class="page-item"><a class="page-link my-page" href="#">Вперед</a></li>
+                    </ul>
+                  </nav>
                 </div>
               </div>
               <!--pagination-->
@@ -541,64 +546,67 @@
     <!--/content-->      
 
     <footer>
-      <div class="container p-0">
+      <div class="container">
 
-        <!--yandex_metrika-->
-        <div class="footer_metrika">
-          <!--row_metrika-->
-          <div class="row">
-            <div class="col-md-10"></div>
-            <div class="col-md-2">
+        <div class="row footer_metrika">
+          <div class="col-md-10"></div>
+          <div class="col-md-2">
+            <div class="d-flex justify-content-end">
               <!-- Yandex.Metrika informer -->
-              <a href="https://metrika.yandex.ru/stat/?id=29306175&amp;from=informer" target="_blank" rel="nofollow"><!-- /Yandex.Metrika informer --><img src="https://informer.yandex.ru/informer/29306175/1_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="29306175" data-lang="ru"></a>
-              <!-- /Yandex.Metrika informer -->
-            </div>
-          </div>
-          <!--/row_metrika-->
+              <a href="https://metrika.yandex.ru/stat/?id=29306175&amp;from=informer" target="_blank" rel="nofollow"><!-- /Yandex.Metrika informer --><img src="https://informer.yandex.ru/informer/29306175/1_1_FFFFFFFF_EFEFEFFF_0_pageviews" style="width:80px; height:15px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры)" class="ym-advanced-informer" data-cid="29306175" data-lang="ru">
+              </a>
+            </div>  
+              <!-- /Yandex.Metrika informer --> 
+          </div>      
         </div>
         <!--yandex_metrika-->
 
         <!--footer_menu-->
-        <div class="footer_menu">
-          <div class="row">
-            <div class="col-md-12 d-flex justify-content-around">
+        <div class="row footer_menu">
+          <div class="col-sm-12 d-flex justify-content-around">
 
-              <div>
-                <h3>Покупателям</h3>
-                <ul>
-                  <li><a href="#">Акции и скидки</a></li>
-                  <li><a href="#">Гарантия на товары</a></li>
-                </ul>
-              </div>
+            <div>
+              <h3>Покупателям</h3>
+              <ul>
+                <li><a href="#">Акции и скидки</a></li>
+                <li><a href="#">Гарантия на товары</a></li>
+              </ul>
 
-              <div>
-                <h3>Доставка и оплата</h3>
-                <ul>
-                  <li><a href="#">Условия доставки</a></li>
-                  <li><a href="#">Варианты оплаты</a></li>
+              <h3 class="d-sm-block d-md-none">Поставщикам</h3>
+              <ul class="d-sm-block d-md-none">
+                  <li><a href="#">Отдел закупок</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Доставка и оплата</h3>
+              <ul>
+                <li><a href="#">Условия доставки</a></li>
+                <li><a href="#">Варианты оплаты</a></li>
+              </ul>
+              <h3 class="d-sm-block d-md-none">Отдел качества</h3>
+                <ul class="d-sm-block d-md-none p-0">
+                  <li style="list-style: none"><a href="#">+7 (920) 218-52-90</a></li>
                 </ul>
-              </div>
-            
-              <div>
-                  <h3>Поставщикам</h3>
-                  <ul>
-                    <li><a href="#">Отдел закупок</a></li>
+            </div>
+          
+            <div class="d-sm-none d-md-block">
+                <h3>Поставщикам</h3>
+                <ul>
+                  <li><a href="#">Отдел закупок</a></li>
+                </ul>
+                <h3 class="d-none d-md-block d-lg-none">Отдел качества</h3>
+                  <ul class="d-none d-md-block d-lg-none p-0">
+                    <li style="list-style: none"><a href="#">+7 (920) 218-52-90</a></li>
                   </ul>
-                  <h3 class="d-none d-md-block d-lg-none">Отдел качества</h3>
-                    <ul class="d-none d-md-block d-lg-none">
-                      <li><a href="#">+7 (920) 218-52-90</a></li>
-                    </ul>
-                </div>
-            
-              <div class="d-none d-lg-block d-xl-block">
-                    <h3>Отдел качества</h3>
-                    <ul>
-                      <li><a href="#">+7 (920) 218-52-90</a></li>
-                    </ul>
               </div>
-            
-          </div>
-
+          
+            <div class="d-none d-lg-block d-xl-block">
+                  <h3>Отдел качества</h3>
+                  <ul class="p-0">
+                    <li style="list-style: none"><a href="#">+7 (920) 218-52-90</a></li>
+                  </ul>
+            </div>   
         </div>
         <!--/footer_menu-->
 
