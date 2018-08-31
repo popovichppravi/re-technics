@@ -14,6 +14,16 @@ h1{
 .my-row{
     margin-bottom: 30px;
 }
+.fas .fa-filter{
+    background: #CE0202;
+}
+.close{
+    color: #fff;
+    opacity: 1;
+    font-size: 30px;
+    text-shadow: none;
+    font-weight: normal;
+}
 /*** header***/
 
 .headline{
@@ -129,7 +139,7 @@ h1{
     background: linear-gradient(to bottom, rgba(204,10,10,1) 0%,rgba(181,3,0,1) 100%);    
     width: 100%;
     border-top: 1px solid #D55251;
-    border-bottom: 1px solid #231F20;; 
+    border-bottom: 1px solid #8A0C0A;; 
 }
 .h_menu a:hover{
     background: #990300;
@@ -190,8 +200,12 @@ h1{
 /***  content***/
 
 /*Левое меню*/
+.my-left-menu{
+    z-index: 2000;
+    position: absolute;
+}
 .LM {
-    border: #E3E4E5 solid 2px;
+
     padding: 0;
     cursor: pointer;
 }
@@ -210,6 +224,7 @@ h1{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f1f2f2',GradientType=0 ); /* IE6-9 */
     text-align: left;
     padding: 10px 35px;
+    border: #E3E4E5 solid 1px;
     }
 .lmenu:hover{
     background: rgb(230,231,232); /* Old browsers */
@@ -226,6 +241,7 @@ h1{
         background: linear-gradient(to bottom, rgba(204,10,10,1) 0%,rgba(181,3,0,1) 100%);
         color: #fff;
         border-radius: 0;
+        border: rgba(181,3,0,1) solid 1px;
     }   
 .lmenu a{
     width: 100%
@@ -294,9 +310,6 @@ h1{
     color: #231F20;
     background: #F5F6F6;
     border-color: #B9BBBD;
-}
-.table_view img{
-    
 }
 .list_view{
     background-image: url(image/list_view.png);
@@ -398,6 +411,21 @@ h1{
 }
 
 /* /Блок Каталог*/
+
+.my-filter{
+    font-family: "RobotoMedium";
+    font-size: 18px;
+}
+.my-filter button{
+    width: 283px;
+    height: 44px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: none;
+    border: 1px solid #909295;
+}
 /***  /content***/
 
 /*Подвал сайта*/
@@ -424,7 +452,6 @@ h1{
 .footer_menu ul{
     list-style-type: disc;
     padding: 0 0 0 20px;
-    margin-bottom: 5px;
 }
 .footer_menu li {
     padding: 0 0 5px 0;
@@ -434,6 +461,7 @@ h1{
     text-decoration: none;
     font-size: 18px;
     font-family: "RobotoRegular";
+    padding-left: -5px;
  } 
 
  .footer_menu li a:hover {
@@ -464,7 +492,7 @@ h1{
     .carousel-control-prev{
     left: -30px;
     }
-.carousel-control-next{
+    .carousel-control-next{
     right: -30px;
     }
 }
@@ -478,8 +506,11 @@ h1{
     .carousel-control-prev{
     left: -10px;
     }
-.carousel-control-next{
+    .carousel-control-next{
     right: -10px;
+    }
+    .my-left-menu{
+        z-index: 100;
     }
 }
 @media screen and (max-width: 576px){
@@ -489,5 +520,21 @@ h1{
     .headline_mob_src{
         display: flex;
     }
-
+    .headline_basket a span{
+        bottom: 50px;
+        right: 20px;
+    }
+   .h_menu:hover{
+        background: #990300;
+   }
+    .h_menu .nav, .h_menu_item{
+        border-left: none;
+        border-right: none;
+    }
+    .footer_menu ul, li a{
+        font-size: 16px;
+    }
+    .my-left-menu{
+        z-index: 100;
+    }
 }
