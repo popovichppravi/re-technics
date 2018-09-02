@@ -170,243 +170,310 @@
 
     <!--content-->
     <content>
-      <!--container-fluid-->
+      <!--container-->
       <div class="container">
           <!--row-->
-          <div class="row">
-            <div class="collapse" id="collapse_menu">
-              <!--left_menu-->
-              <div class="my-left-menu col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 p-0 d-md-block d-lg-none">
-                <!--Left menu-->
+        <div class="row">
+          <div class="collapse" id="collapse_menu">
+            <!--left_menu-->
+            <div class="my-left-menu col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 p-0 d-md-block d-lg-none">
+              <!--Left menu-->
 
-                <div class="d-inline-flex w-100  d-block d-sm-none">
-                  <div class="lmenu text-center">Войти</div>
-                  <div class="lmenu">Регистрация</div>
-                </div>
+              <div class="d-inline-flex w-100  d-block d-sm-none">
+                <div class="lmenu text-center">Войти</div>
+                <div class="lmenu">Регистрация</div>
+              </div>
 
+              <div class="card p-0">
+                  <div class="card-header lmenu active" id=" heading">
+                      <span>Компьютерная техника</span>
+                      <button type="button" class="close d-md-block d-lg-none" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+              </div> 
+
+              <div class="LM" id="accordion">
+
+                <!-- Первый уровень меню-->
                 <div class="card p-0">
-                    <div class="card-header lmenu active" id=" heading">
-                        <span>Компьютерная техника</span>
-                        <button type="button" class="close d-md-block d-lg-none" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
+                  <div class="card-header lmenu" id="headingOne">
+                    <a data-toggle="collapse" href="#collapseOne" class="dropdown-toggle">Компьютеры с пробегом</a>
+                  </div>
+
+                  <!-- Обертка для второго уровня меню-->
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <!-- Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingOne_1">
+                            <a data-toggle="collapse" href="#collapseOne_1"  class="dropdown-toggle">Компьютеры на платформе Intel</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_1" class="collapse" aria-labelledby="headingOne_1" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_1_1">
+                                  <a data-toggle="collapse" href="#">370 Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_1_2">
+                                  <a data-toggle="collapse" href="#">478 Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_1_3">
+                                  <a data-toggle="collapse" href="#">775 Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_1_4">
+                                  <a data-toggle="collapse" href="#">1150 Socket</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingOne_2">
+                            <a data-toggle="collapse" href="#collapseOne_2"  class="dropdown-toggle">Компьютеры на платформе AMD</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_2" class="collapse" aria-labelledby="headingOne_2" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_2_1">
+                                  <a data-toggle="collapse" href="#">754 Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_2_2">
+                                  <a data-toggle="collapse" href="#">939 Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_2_3">
+                                  <a data-toggle="collapse" href="#">A Socket</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_2_4">
+                                  <a data-toggle="collapse" href="#">AM2 Socket </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingOne_3">
+                            <a data-toggle="collapse" href="#collapseOne_3"  class="dropdown-toggle">Компьютеры на платформе Apple</a>
+                        </div>
+
+                        <!-- Обертка для третьего уровня меню-->
+                        <div id="collapseOne_3" class="collapse" aria-labelledby="headingOne_3" data-parent="#collapseOne">
+                          <div class="card-body">
+                            <!-- Третий уровень меню-->
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_3_1">
+                                  <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_3_2">
+                                  <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_3_3">
+                                  <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
+                              </div>
+                            </div>
+                            <div class="card p-0">
+                              <div class="card-header lmenu lm_l3" id="headingOne_3_4">
+                                  <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>        
                     </div>
+                  </div>
                 </div> 
 
-                <div class="LM" id="accordion">
-
-                  <!-- Первый уровень меню-->
-                  <div class="card p-0">
-                    <div class="card-header lmenu" id="headingOne">
-                      <a data-toggle="collapse" href="#collapseOne" class="dropdown-toggle">Компьютеры с пробегом</a>
-                    </div>
-
-                    <!-- Обертка для второго уровня меню-->
-                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                      <div class="card-body">
-
-                        <!-- Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingOne_1">
-                              <a data-toggle="collapse" href="#collapseOne_1"  class="dropdown-toggle">Компьютеры на платформе Intel</a>
-                          </div>
-
-                          <!-- Обертка для третьего уровня меню-->
-                          <div id="collapseOne_1" class="collapse" aria-labelledby="headingOne_1" data-parent="#collapseOne">
-                            <div class="card-body">
-                              <!-- Третий уровень меню-->
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_1_1">
-                                    <a data-toggle="collapse" href="#">370 Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_1_2">
-                                    <a data-toggle="collapse" href="#">478 Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_1_3">
-                                    <a data-toggle="collapse" href="#">775 Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_1_4">
-                                    <a data-toggle="collapse" href="#">1150 Socket</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingOne_2">
-                              <a data-toggle="collapse" href="#collapseOne_2"  class="dropdown-toggle">Компьютеры на платформе AMD</a>
-                          </div>
-
-                          <!-- Обертка для третьего уровня меню-->
-                          <div id="collapseOne_2" class="collapse" aria-labelledby="headingOne_2" data-parent="#collapseOne">
-                            <div class="card-body">
-                              <!-- Третий уровень меню-->
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_2_1">
-                                    <a data-toggle="collapse" href="#">754 Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_2_2">
-                                    <a data-toggle="collapse" href="#">939 Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_2_3">
-                                    <a data-toggle="collapse" href="#">A Socket</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_2_4">
-                                    <a data-toggle="collapse" href="#">AM2 Socket </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingOne_3">
-                              <a data-toggle="collapse" href="#collapseOne_3"  class="dropdown-toggle">Компьютеры на платформе Apple</a>
-                          </div>
-
-                          <!-- Обертка для третьего уровня меню-->
-                          <div id="collapseOne_3" class="collapse" aria-labelledby="headingOne_3" data-parent="#collapseOne">
-                            <div class="card-body">
-                              <!-- Третий уровень меню-->
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_3_1">
-                                    <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_3_2">
-                                    <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_3_3">
-                                    <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
-                                </div>
-                              </div>
-                              <div class="card p-0">
-                                <div class="card-header lmenu lm_l3" id="headingOne_3_4">
-                                    <a data-toggle="collapse" href="#">Компьютеры на платформе Apple</a>
-                                </div>
-                              </div>
-
-                            </div>
-                          </div>
-                        </div>        
-                      </div>
-                    </div>
-                  </div> 
-
-                  <!-- Первый уровень меню-->
-                  <div class="card p-0">
-                    <div class="card-header lmenu" id="headingTwo">
-                        <a data-toggle="collapse" href="#collapseTwo"  class="dropdown-toggle">Комплектующие</a>
-                    </div>
-
-                    <!-- Обертка для второго уровня меню-->
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                      <div class="card-body">
-
-                        <!--Второй уровень меню-->
-                        <div class="card p-0"> 
-                          <div class="card-header lmenu lm_l2" id="headingTwo_1">
-                              <a data-toggle="collapse" href="#">Оперативная память</a>
-                          </div>
-                        </div>
-                        <!--Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingTwo_2">
-                              <a data-toggle="collapse" href="#">Материнская плата</a>
-                          </div>
-                        </div>
-                        <!--Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingTwo_3">
-                              <a data-toggle="collapse" href="#">Процессоры</a>
-                          </div>
-                        </div>          
-
-                      </div>
-                    </div>
+                <!-- Первый уровень меню-->
+                <div class="card p-0">
+                  <div class="card-header lmenu" id="headingTwo">
+                      <a data-toggle="collapse" href="#collapseTwo"  class="dropdown-toggle">Комплектующие</a>
                   </div>
 
-                  <!-- Первый уровень меню-->
-                  <div class="card p-0">
-                    <div class="card-header lmenu" id="headingThree">
-                         <a data-toggle="collapse" href="#collapseThree"  class="dropdown-toggle">Компьютерная переферия</a>
+                  <!-- Обертка для второго уровня меню-->
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+
+                      <!--Второй уровень меню-->
+                      <div class="card p-0"> 
+                        <div class="card-header lmenu lm_l2" id="headingTwo_1">
+                            <a data-toggle="collapse" href="#">Оперативная память</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingTwo_2">
+                            <a data-toggle="collapse" href="#">Материнская плата</a>
+                        </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingTwo_3">
+                            <a data-toggle="collapse" href="#">Процессоры</a>
+                        </div>
+                      </div>          
+
                     </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                      <div class="card-body">
-                        <!--Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingThree_1">
-                              <a data-toggle="collapse" href="#">Флеш накопители USB</a>
-                          </div>
+                  </div>
+                </div>
+
+                <!-- Первый уровень меню-->
+                <div class="card p-0">
+                  <div class="card-header lmenu" id="headingThree">
+                       <a data-toggle="collapse" href="#collapseThree"  class="dropdown-toggle">Компьютерная переферия</a>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                      <!--Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingThree_1">
+                            <a data-toggle="collapse" href="#">Флеш накопители USB</a>
                         </div>
-                        <!--Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingThree_2">
-                              <a data-toggle="collapse" href="#">Флеш карты SD microSD</a>
-                          </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingThree_2">
+                            <a data-toggle="collapse" href="#">Флеш карты SD microSD</a>
                         </div>
-                        <!--Второй уровень меню-->
-                        <div class="card p-0">
-                          <div class="card-header lmenu lm_l2" id="headingThree_3">
-                              <a data-toggle="collapse" href="#">Блоки питания внешние</a>
-                          </div>
+                      </div>
+                      <!--Второй уровень меню-->
+                      <div class="card p-0">
+                        <div class="card-header lmenu lm_l2" id="headingThree_3">
+                            <a data-toggle="collapse" href="#">Блоки питания внешние</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!--/Left menu-->              
-              </div> 
-              <!--/left_menu-->
-            </div>
+              </div>
+              <!--/Left menu-->              
+            </div> 
             <!--/left_menu-->
-          </div> 
-          <!--/row-->  
+          </div>
+          <!--/left_menu-->
+        </div> 
+        <!--/row-->  
 
         <!--breadcrumb-->
-          <div class="row d-none d-sm-block w-100">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Компьютерная техника</a></li>
-                  <li class="breadcrumb-item"><a href="#">Мониторы</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">ЖК 17"</li>
-                </ol>
-              </nav>
-            </div>  
-          </div>
-          <!--/breadcrumb-->
+        <div class="row d-none d-sm-block w-100">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Компьютерная техника</a></li>
+                <li class="breadcrumb-item"><a href="#">Мониторы</a></li>
+                <li class="breadcrumb-item active" aria-current="page">ЖК 17"</li>
+              </ol>
+            </nav>
+          </div>  
+        </div>
+        <!--/breadcrumb-->
 
-          <!--catalog_title-->
-          <div class="row">
-            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
-              <h1>Монитор с дефектом ЖК 17" 5:4 Samsung 710N белый</h1>
-            </div>  
+        <!--catalog_title-->
+        <div class="row">
+          <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+            <h1>Монитор с дефектом ЖК 17" 5:4 Samsung 710N белый</h1>
+          </div>  
+        </div>
+        <!--/catalog_title-->
+
+        <!--product_card-->
+        <div class="row">
+          <div class="col-xl-1">
+            <div class="product_foto d-flex flex-column">
+              <div class="product_foto_item1">
+                <i class="fa fa-angle-up" aria-hidden="true"></i>
+              </div>
+              <div class="product_foto_item">
+                <img src="image/noimage.png">
+              </div>
+              <div class="product_foto_item">
+                <img src="image/noimage.png">
+              </div>
+              <div class="product_foto_item">
+                <img src="image/noimage.png">
+              </div>
+              <div class="product_foto_item">
+                <img src="image/noimage.png">
+              </div>
+              <div class="product_foto_item1">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </div>
+            </div> 
+          </div>  
+
+          <div class="col-xl-6">
+              <div class="my_prod">
+                <img  src="image/noimage.png">
+              </div>
+              <div class="my_prod_kod">
+                <p>Код товара: артикул</p>
+              </div>
           </div>
-          <!--/catalog_title-->
-        <!--catalog-->
+          <div class="col-xl-5">
+            
+              <div class="prod_price_in flex-column">
+
+                <div class="justify-content-center">
+                  <img src="image/star_red.png">
+                  <img src="image/star_red.png">
+                  <img src="image/star_grey.png">
+                  <img src="image/star_grey.png">
+                  <img src="image/star_grey.png">
+                </div>
+
+                <div class="product_price flex-column">
+                  <p class="new_pr m-0">8000</p>
+                  <p class="old_pr m-0">10000</p>
+                  <button type="button" class="bt_buy">В корзину</button>
+                  <p class="sale_txt">Скидка 20%</p>
+
+                  <div class="dostavka text-center">
+                    <ul>
+                      <p>Способы доставки:</p>
+                      <li>Самовывоз из магазина</li>
+                      <li>Доставка ТК по России</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            
+          </div>
+
+        </div>
+        <!--/product_card-->
   
+
           
       </div>
-      <!--/container-fluid-->
+      <!--/container-->
     </content>
     <!--/content-->      
 
