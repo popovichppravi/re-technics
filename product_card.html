@@ -174,6 +174,7 @@
       <div class="container">
           <!--row-->
         <div class="row">
+          <!--left_menu-->
           <div class="collapse" id="collapse_menu">
             <!--left_menu-->
             <div class="my-left-menu col-xl-4 col-lg-5 col-md-6 col-sm-8 col-12 p-0 d-md-block d-lg-none">
@@ -404,7 +405,7 @@
         <!--/catalog_title-->
 
         <!--product_card-->
-        <div class="row">
+        <div class="row mb-3">
           <div class="col-xl-1">
             <div class="product_foto d-flex flex-column">
               <div class="product_foto_item1">
@@ -451,7 +452,10 @@
                 <div class="product_price flex-column">
                   <p class="new_pr m-0">8000</p>
                   <p class="old_pr m-0">10000</p>
-                  <button type="button" class="bt_buy">В корзину</button>
+                  <div class="m-2">
+                    <button type="button" class="bt_buy">В корзину</button>
+                  </div>
+                
                   <p class="sale_txt">Скидка 20%</p>
 
                   <div class="dostavka text-center">
@@ -466,20 +470,352 @@
               </div>
             
           </div>
-
         </div>
         <!--/product_card-->
-  
 
+        <!--product_tabs-->
+        <div class="row">
+          <div class="col-xl-12">
+            <nav>
+            <div class="nav nav-tabs justify-content-around product_tabs mb-4" id="nav-tab" role="tablist">
+              <a class="nav-item nav-link active flex-fill mr-1"  
+                 id="nav-home-tab" 
+                 data-toggle="tab" 
+                 href="#prod_info" 
+                 role="tab" 
+                 aria-controls="prof)info" 
+                 aria-selected="true">Описание товара
+               </a>
+               <a class="nav-item nav-link flex-fill mr-1"  
+                 id="nav-home-tab" 
+                 data-toggle="tab" 
+                 href="#prod_in_shop" 
+                 role="tab" 
+                 aria-controls="prod_in_shop" 
+                 aria-selected="true">Наличие в магазинах
+               </a>
+               <a class="nav-item nav-link flex-fill"  
+                 id="nav-home-tab" 
+                 data-toggle="tab" 
+                 href="#reviews" 
+                 role="tab" 
+                 aria-controls="reviews" 
+                 aria-selected="true">Отзывы
+               </a>
+            </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade  show active" id="prod_info" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row">
+                      <div class="col-xl-1"></div>
+                      <div class="col-xl-5">
+                          <ul class="product_spec">
+                            <h5>Основные характеристики</h5>
+                            <li>Диагональ 17" Тип ЖК-матрицы: TFT TN Разрешение:  280x1024</li>
+                            <li>Угол обзора: W160H160 Цвет: белый Имеются повреждения, не влияющие на работоспособность. Samsung 710N</li>
+                            <li>Диагональ 17"</li>
+                            <li>Тип ЖК-матрицы: TFT TN</li>
+                            <li>Разрешение: 1280x1024</li>
+                            <li>Угол обзора: W160H160</li>
+                            <li>Цвет: белый</li>
+                          </ul>
+
+                          <ul class="product_spec">
+                            <h5>Состояние товара:</h5>
+                            <li>Уцененный</li>
+                          </ul>
+
+                          <ul class="product_spec">
+                            <h5>Гарантия:</h5>
+                            <li>Гарантия 1(один) месяц</li>
+                          </ul>
+                      </div>
+                      <div class="col-xl-2"></div>
+                      <div class="col-xl-3">
+                        <div class="row product_sale text-center justify-content-center">
+                          <div class="col-3"><img src="image/sale.png"></div>
+                          <div class="col-9 p-0">
+                            <div class="product_sale_txt">
+                              <h1>Акция:</h1>
+                              <p>Купи 2 товара Gelberk получи скидку 5%</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                      <div class="col-xl-1"></div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="prod_in_shop" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row mb-5">
+                  <div class="col-12">
+                    <table class="tab_shops w-100">
+                      <thead class="text-center">
+                        <tr>
+                          <td>Город:</td>
+                          <td>Адрес:</td>
+                          <td>Телефон:</td>
+                          <td>График работы:</td>
+                        </tr>
+                      </thead>
+                      <tbody class="text-center">
+                        <tr>
+                          <td>г. Воронеж</td>
+                          <td>Ленинский пр. 215</td>
+                          <td>+7 (920) 218-52-90</td>
+                          <td>c 9:00 до 21:00 <br>ежедневно<td>
+                        </tr>
+                        <tr>
+                          <td>г. Воронеж</td>
+                          <td>Ленинский пр. 215</td>
+                          <td>+7 (920) 218-52-90</td>
+                          <td>c 9:00 до 21:00 <br> ежедневно<td>
+                        </tr>
+                        <tr>
+                          <td>г. Воронеж</td>
+                          <td>Ленинский пр. 215</td>
+                          <td>+7 (920) 218-52-90</td>
+                          <td>c 9:00 до 21:00 <br> ежедневно<td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="reviews" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row">
+                      <div class="col-xl-1"></div>
+                      <div class="col-xl-6">
+
+                        <div class="row flex-column mb-3">
+                              <!--Username/Date-->
+                              <div class="d-flex justify-content-left flex-column">
+                                <div class="d-inline-flex flex-fill">
+                                    <div class="Username_style">Александр</div>
+                                    <div class="date_style">20.04.2017</div>
+                                </div>
+                                
+                                <!--Rating (stars)-->
+                                <div class="justify-content-left pl-2">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                </div>
+                                <!--Review-->
+                                <p class="userreview">Купили этот девайс чуть больше месяца назад, за эти еньги оправдывает себя реально, немного стоит и уйма всего, из недостатков пожалуй только пульт (слишком много кнопок) и при выключеном плеере постоянно горят 2 синих лампочки, красиво но уж слишком ярко))))</p>
+                              </div>
+                              
+                              <!--Comment Username/Date-->
+                              <div class="d-flex justify-content-left flex-column flex-fill pl-5">
+  
+                                <div class="d-inline-flex flex-fill">
+                                    <div class="Username_style">Ретехника</div>
+                                    <div class="date_style">20.04.2017</div>
+                                </div>
+                                <!--Comment-->
+                                <p class="userreview m-0">Спасибо за позитивный отзыв</p>
+                              </div>
+                              <!--Comment link-->
+                              <div class="comm_btn">
+                                <a data-toggle="modal" href="#CommentModal">
+                                <img src="image/comm.png">
+                                Комментировать</a>
+                              </div> 
+
+                              <!--Modal for comments-->
+                              <div class="modal fade" id="CommentModal" tabindex="-1" role="dialog" aria-labelledby="CommentModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="CommentModalLabel">Комментировать</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span>&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="form-group">
+                                        <label for="InputUsername">Имя:</label>
+                                        <input type="text" class="form-control" id="InputUsername" placeholder="Имя">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Usercomment">Комментарий:</label>
+                                        <textarea class="form-control" id="Usercomment" rows="3"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Отправить</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>                                  
+                        </div>
+
+                        <div class="row flex-column mb-3">
+                              <!--Username/Date-->
+                              <div class="d-flex justify-content-left flex-column">
+                                <div class="d-inline-flex flex-fill">
+                                    <div class="Username_style">Ольга</div>
+                                    <div class="date_style">17.04.2017</div>
+                                </div>
+                                
+                                <!--Rating (stars)-->
+                                <div class="justify-content-left pl-2">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                </div>
+                                <!--Review-->
+                                <p class="userreview">Полная ерунда</p>
+                              </div>
+                              
+                              <!--Comment link-->
+                              <div class="comm_btn">
+                                <a data-toggle="modal" href="#CommentModal">
+                                <img src="image/comm.png">
+                                Комментировать</a>
+                              </div> 
+                        </div>
+
+                      </div>
+                      <div class="col-xl-1"></div>
+                      <div class="col-xl-3">
+                        <div class="reining text-center">
+                          <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                          </div>
+                          <h5>83% покупателей рекомендуют этот товар</h5>
+                          <table>
+                            <tbody>
+                            <tr class="text-left flex-fill">
+                              <td>
+                                <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                </div>
+                              </td>
+                              <td>8 отзывов</td>
+                            </tr class="text-left">
+                            <tr>
+                              <td>
+                                <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                                </div>
+                              </td>
+                              <td>2 отзыва</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>
+                                <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                </div>
+                              </td>
+                              <td>0 отзывов</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>
+                                <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                </div>
+                              </td>
+                              <td>0 отзывов</td>
+                            </tr>
+                            <tr class="text-left">
+                              <td>
+                                <div class="justify-content-left">
+                                  <img src="image/star_red.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                  <img src="image/star_grey.png">
+                                </div>
+                              </td>
+                              <td>1 отзыв</td>
+                            </tr>
+                            </tbody>
+                          </table>
+
+                          <button type="button" class="btn btn-primary bt_buy" data-toggle="modal" data-target="#ReviewModal">
+                            Оставить отзыв
+                          </button>
+                          <!--Modal for reviews-->
+                              <div class="modal fade" id="ReviewModal" tabindex="-1" role="dialog" aria-labelledby="ReviewModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="ReviewModalLabel">Написать отзыв</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span>&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <div class="justify-content-left">
+                                        <img src="image/star_red.png">
+                                        <img src="image/star_red.png">
+                                        <img src="image/star_red.png">
+                                        <img src="image/star_red.png">
+                                        <img src="image/star_red.png">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="InputUsername">Имя:</label>
+                                        <input type="text" class="form-control" id="InputUsername" placeholder="Имя">
+                                      </div>
+                                      <div class="form-group">
+                                        <label for="Usercomment">Отзыв:</label>
+                                        <textarea class="form-control" id="Usercomment" rows="3"></textarea>
+                                      </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-primary">Отправить</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+                      </div> 
+                      <div class="col-xl-1"></div>          
+                </div> 
+                <div class="row">
+                  <button>Показать еще</button>
+                </div>
+              </div>                  
+            </div>
+          </div>
+        </div>
+ 
+  
+        
           
       </div>
       <!--/container-->
+ 
     </content>
     <!--/content-->      
 
     <footer>
-      <div class="container">
-
+      
         <div class="row footer_metrika">
           <div class="col-md-10"></div>
           <div class="col-md-2">
@@ -547,6 +883,7 @@
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
